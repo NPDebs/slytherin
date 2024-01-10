@@ -31,3 +31,4 @@ elif os.path.isfile(filepath):
 else:
     print("Please confirm the file or directory inputed.")
 
+# TO-DO: Add condition for .png and other file types
