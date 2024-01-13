@@ -20,13 +20,11 @@ def organise_files(starting_folder, destination_folder):
     # Loop through the list of files and extract file path
     for file in files:
         starting_path = os.path.join(starting_folder, file)
-        # print(starting_path)
 
         # Check if file is an actual file and not a directory
         if os.path.isfile(starting_path):
             # Get the file extension
             _, extension = os.path.splitext(file)  # Extract the file extension
-            # print(extension)
             
             # Create new folder(s) for each file type
             extension_folder = os.path.join(destination_folder, extension[1:])
