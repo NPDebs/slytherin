@@ -45,3 +45,5 @@ starting_folder = input("Enter path of folder you want to clean up: ")
 destination_folder = input("Enter path of folder where you want files to be: ")
 
 organise_files(starting_folder, destination_folder)
+
+# TO-DO: Write a second function which reverses this action. Allow user decide which function to perform.
