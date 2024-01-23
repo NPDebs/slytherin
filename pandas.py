@@ -20,3 +20,12 @@ def csv_to_markdown(csv_file, md_output):
     # Open the specified md file (md_output) in write mode; write the md table content into it
     with open(md_output, 'w') as md_file:
         md_file.write(markdown_table)
+
+# Check if the script is being run as the main program (not imported as a module).
+if __name__ == "__main__":
+    # Allow user specify paths for the input CSV file (input_csv_file) and the output Markdown file (output_md_file).
+    input_csv_file = input("Enter path to the CSV file: ")
+    output_md_file = input("Enter path for the output md file: ")
+
+    # Call the function with specified paths
+    csv_to_markdown(input_csv_file, output_md_file)
