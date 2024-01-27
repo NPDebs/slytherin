@@ -29,7 +29,6 @@ def gpa_calculator():
         # Append credit unit and grade to their respective lists
         credits.append(course_unit)
         grades.append(course_grade)
-        print(credits, grades)
     
     # Create variables to store the total quality points and total credits.
     total_quality_points = 0
@@ -42,8 +41,6 @@ def gpa_calculator():
         quality_points = credits[i] * grade_point
         total_quality_points += quality_points
         total_credits += credits[i]
-        # print(grade_point)
-        # print(quality_points)
     
     # Calculate GPA
     if total_credits > 0:
