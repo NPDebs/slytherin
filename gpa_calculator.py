@@ -42,5 +42,15 @@ def gpa_calculator():
         quality_points = credits[i] * grade_point
         total_quality_points += quality_points
         total_credits += credits[i]
-        print(grade_point)
-        print(quality_points)
+        # print(grade_point)
+        # print(quality_points)
+    
+    # Calculate GPA
+    if total_credits > 0:
+        gpa = total_quality_points / total_credits
+        print(f"\nYour GPA is: {gpa:.2f}")
+    else:
+        print("\nYou didn't enter any courses. Your GPA cannot be calculated.")
+
+# Call the GPA calculator function
+gpa_calculator()
