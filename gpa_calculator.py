@@ -7,3 +7,8 @@ QP (Quality Points): Represents the product of the Grade Points and the number o
 GPA => Grade Point Average: A numeric representation of academic performance.
 This is the sum of quality points divided by the total number of credits.
 '''
+
+# Define function to calculate the CGPA
+def gpa_calculator():
+    # Create a dictionary "grade_points" where each letter grade is mapped to its corresponding grade point.
+    grade_points = {'A': 5, 'B': 4, 'C': 3, 'D': 2, 'E': 1}
