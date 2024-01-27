@@ -29,3 +29,18 @@ def gpa_calculator():
         # Append credit unit and grade to their respective lists
         credits.append(course_unit)
         grades.append(course_grade)
+        print(credits, grades)
+    
+    # Create variables to store the total quality points and total credits.
+    total_quality_points = 0
+    total_credits = 0
+
+    # Then, iterate through the courses, retrieve the corresponding GP from the "grade_points" dictionary
+    # Calculate QP for each course; accumulate the total QPs and credits.
+    for i in range(num_courses):
+        grade_point = grade_points.get(grades[i], 0)
+        quality_points = credits[i] * grade_point
+        total_quality_points += quality_points
+        total_credits += credits[i]
+        print(grade_point)
+        print(quality_points)
