@@ -1,0 +1,12 @@
+<!-- Creates a form to receive data from user.-->
+
+<!-- When the HTML form is submitted, the data is sent to the server via the HTTP POST method. -->
+
+<form method="post" action="{% url 'gpa_calculator' %}">
+    {% csrf_token %}
+    
+    <!-- Prompt user to input the number of courses -->
+    <label for="num_courses">Enter the number of courses:</label>
+    <input type="number" name="num_courses"><br>
+    <button type="submit">Submit</button>
+</form>
