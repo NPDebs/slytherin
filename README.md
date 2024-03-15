@@ -17,4 +17,4 @@ Each one is designed to be a standalone program, making it easy for beginners to
 ...
 
 
-<!-- To-do list app; exexutable. -->
+<!-- To-do list app; executable. AI-powered book recommendation app. Habit tracker. -->
